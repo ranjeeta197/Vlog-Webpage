@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diy-crafts</title>
+    <link rel="stylesheet" href="diy.css">
+    <style>
+        body{ 
+/* Styles for the DIY page */
+.diy-intro {
+    padding: 2rem;
+    text-align: center;
+}
+
+.diy-intro h2 {
+    color: #ff6600;
+    margin-bottom: 1.5rem;
+}
+
+.diy-intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.diy-intro img {
+    margin-top: 1.5rem;
+    border: 4px solid #ff6600;
+    border-radius: 8px;
+}
+
+.diy-projects {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #fff3e0;
+}
+
+.diy-projects h3 {
+    color: #ff6600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.diy-project {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ff6600;
+    border-radius: 8px;
+}
+
+.diy-project h4 {
+    color: #ff6600;
+    margin-bottom: 0.5rem;
+}
+
+.diy-project p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.diy-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.diy-button:hover {
+    background-color: #e65c00;
+}
+
+.diy-details {
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px dashed #ff6600;
+    border-radius: 5px;
+}
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="diy-intro">
+            <h2>Creative DIY Crafts for Diwali</h2>
+            <p>Get inspired to create beautiful decorations and gifts with these DIY projects perfect for Diwali celebrations.</p>
+            <img src="https://i.pinimg.com/originals/26/ab/dc/26abdc2876c61c48abd2b3853f58527f.jpg" alt="DIY Crafts for Diwali" width="600" height="400">
+        </section>
+
+        <section class="diy-projects">
+            <h3>Popular DIY Projects</h3>
+
+            <div class="diy-project">
+                <h4>Handmade Diyas</h4>
+                <p>Learn to create beautiful clay diyas that you can decorate with paints and embellishments.</p>
+                
+                    <p><strong>Materials Needed:</strong> Clay, paint, brush, glitter, and a brush.</p>
+                    <p><strong>Instructions:</strong> 
+                        <ol>
+                            <li>Shape the clay into a diya form.</li>
+                            <li>Allow it to dry completely.</li>
+                            <li>Paint the diya in vibrant colors.</li>
+                            <li>Decorate with glitter for added charm.</li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
+
+            <div class="diy-project">
+                <h4>Paper Lanterns</h4>
+                <p>Create colorful paper lanterns to light up your home this Diwali.</p>
+                
+                
+                    <p><strong>Materials Needed:</strong> Colored paper, scissors, glue, and string.</p>
+                    <p><strong>Instructions:</strong>
+                        <ol>
+                            <li>Cut the colored paper into a rectangular shape.</li>
+                            <li>Make slits along the long side, leaving an inch at the top.</li>
+                            <li>Roll the paper into a cylinder and glue the ends together.</li>
+                            <li>Attach string at the top to hang.</li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
+
+            <div class="diy-project">
+                <h4>Rangoli Designs</h4>
+                <p>Brighten up your entrance with beautiful rangoli designs using colored powders or flowers.</p>
+                
+                    <p><strong>Materials Needed:</strong> Colored powders, flowers, or rice.</p>
+                    <p><strong>Instructions:</strong>
+                        <ol>
+                            <li>Select a design and outline it with chalk.</li>
+                            <li>Fill in the design with colored powders or arrange flowers.</li>
+                            <li>Use rice for a textured effect if desired.</li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
+
+            <div class="diy-project">
+                <h4>Decorative Gift Wrapping</h4>
+                <p>Make your gifts extra special with personalized gift wrapping.</p>
+                    <p><strong>Materials Needed:</strong> Wrapping paper, ribbons, and decorations.</p>
+                    <p><strong>Instructions:</strong>
+                        <ol>
+                            <li>Choose wrapping paper that suits the occasion.</li>
+                            <li>Wrap your gift securely and trim any excess paper.</li>
+                            <li>Add ribbons and decorations for a festive touch.</li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+ <script src="diyas.js">
+
+    // scripts.js
+
+document.addEventListener("DOMContentLoaded", () => {
+
+// Interactive feature for clicking DIY buttons
+const diyButtons = document.querySelectorAll('.diy-button');
+diyButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const diyDetails = button.nextElementSibling;
+        diyDetails.style.display = diyDetails.style.display === 'none' ? 'block' : 'none';
+    });
+});
+
+// Navigation hover effects (reused from previous pages)
+const navLinks = document.querySelectorAll('nav ul li a');
+navLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+
+ </script>
+</body>
+</html>

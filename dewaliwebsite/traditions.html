@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwali-Traditions</title>
+    <link rel="stylesheet" href="traditions.css">
+    <style>
+        body{ 
+        
+        /* Styles for the Traditions page */
+.tradition-intro {
+    padding: 2rem;
+    text-align: center;
+}
+
+.tradition-intro h2 {
+    color: #ff6600;
+    margin-bottom: 1.5rem;
+}
+
+.tradition-intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.tradition-intro img {
+    margin-top: 1.5rem;
+    border: 4px solid #ff6600;
+    border-radius: 8px;
+}
+
+.tradition-details {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #fff3e0;
+}
+
+.tradition-details h3 {
+    color: #ff6600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.tradition {
+    margin-bottom: 2rem;
+}
+
+.tradition h4 {
+    color: #ff6600;
+    margin-bottom: 0.5rem;
+}
+
+.tradition p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="tradition-intro">
+            <h2>Timeless Diwali Traditions</h2>
+            <p>Diwali is a time to honor age-old traditions that bring families together and celebrate the victory of good over evil. Explore the most cherished customs that make Diwali special.</p>
+            <img src="https://media.cntraveller.in/wp-content/uploads/2016/10/diwalifireworkslead.jpg" alt="Diwali Traditions" width="600" height="400">
+        </section>
+
+        <section class="tradition-details">
+            <h3>Key Diwali Traditions</h3>
+
+            <div class="tradition">
+                <h4>Lighting Diyas</h4>
+                <p>The lighting of earthen lamps (diyas) signifies the triumph of light over darkness. Families decorate their homes with diyas to invite peace and prosperity.</p>
+            </div>
+
+            <div class="tradition">
+                <h4>Lakshmi Puja</h4>
+                <p>On the night of Diwali, Lakshmi Puja is performed to worship the goddess of wealth and prosperity. Families pray for happiness and good fortune in the coming year.</p>
+            </div>
+
+            <div class="tradition">
+                <h4>Decorating Homes</h4>
+                <p>Homes are adorned with rangoli designs, flowers, and bright lights to welcome guests and the goddess Lakshmi. The colorful decorations are a hallmark of Diwali celebrations.</p>
+            </div>
+
+            <div class="tradition">
+                <h4>Sharing Sweets</h4>
+                <p>Exchanging sweets and gifts with friends and family is an essential part of Diwali. It symbolizes the sweetness of life and the bonds of love and friendship.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src=tradition.js">
+    
+    // scripts.js
+
+document.addEventListener("DOMContentLoaded", () => {
+
+// Interactive feature for clicking the traditions image
+const traditionImage = document.querySelector('.tradition-intro img');
+if (traditionImage) {
+    traditionImage.addEventListener('click', () => {
+        alert('Diwali traditions bring families together!');
+    });
+}
+
+// Navigation hover effects (reused from previous pages)
+const navLinks = document.querySelectorAll('nav ul li a');
+navLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        link.style.backgroundColor = '#333';
+        link.style.color = '#ffcc00';
+    });
+
+    link.addEventListener('mouseleave', () => {
+        link.style.backgroundColor = 'transparent';
+        link.style.color = '#333';
+    });
+});
+});
+
+    </script>
+</body>
+</html>

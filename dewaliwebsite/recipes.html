@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwali-Recipes</title>
+    <link rel="stylesheet" href="recipes.css">
+    <style>
+        body{ 
+        /* Styles for the Recipes page */
+.recipe-intro {
+    padding: 2rem;
+    text-align: center;
+}
+
+.recipe-intro h2 {
+    color: #ff6600;
+    margin-bottom: 1.5rem;
+}
+
+.recipe-intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.recipe-intro img {
+    margin-top: 1.5rem;
+    border: 4px solid #ff6600;
+    border-radius: 8px;
+}
+
+.recipe-list {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #fff3e0;
+}
+
+.recipe-list h3 {
+    color: #ff6600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.recipe {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ff6600;
+    border-radius: 8px;
+}
+
+.recipe h4 {
+    color: #ff6600;
+    margin-bottom: 0.5rem;
+}
+
+.recipe p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.recipe-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.recipe-button:hover {
+    background-color: #e65c00;
+}
+
+.recipe-details {
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px dashed #ff6600;
+    border-radius: 5px;
+}
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <section class="recipes-intro">
+            <h2>Traditional Diwali Sweets & Snacks</h2>
+            <p>Diwali is incomplete without delicious sweets and savory snacks. Here are some mouth-watering recipes you can try at home this festive season.</p>
+            <img src="https://th.bing.com/th/id/OIP.PsSCWf9iPE9mEG1lZbl7zwHaHa?rs=1&pid=ImgDetMain" alt="Diwali Recipes" width="600" height="400">
+        </section>
+
+        <section class="recipe-list">
+            <h3>Popular Recipes</h3>
+
+            <div class="recipe">
+                <h4>Ladoo</h4>
+                <p>Sweet, round balls made from a variety of ingredients like chickpea flour, coconut, and semolina.</p>
+                <img src="https://th.bing.com/th/id/R.4c8d8dad2addfebe52ba6fa668385952?rik=g6jBkQWAP8qo3g&riu=http%3a%2f%2fdadus.co.in%2fcdn%2fshop%2ffiles%2f53_b440219e-fe28-4bd8-a9ff-658f95c60efa.png%3fv%3d1694334821%26width%3d2048&ehk=7fUKALMvdAiDmWb07DgOEmstlgNIkqutWFfIjwMduls%3d&risl=&pid=ImgRaw&r=0" alt="1" width="200" height="200">
+            </div>
+
+            <div class="recipe">
+                <h4>Kheer</h4>
+                <p>A creamy dessert made from rice, milk, and sugar, flavored with cardamom and topped with nuts.</p>
+                <img src="https://as2.ftcdn.net/v2/jpg/06/66/92/51/1000_F_666925137_mlW8vSeEzS3OIBdWRDGKjTXTBoeTp7XH.jpg" alt="1" width="200" height="200">
+            </div>
+
+            <div class="recipe">
+                <h4>Samosa</h4>
+                <p>A fried or baked pastry filled with spiced potatoes, peas, and other fillings, served with chutney.</p>
+                <img src="https://i.pinimg.com/originals/bb/b1/db/bbb1dbdf377f35f057605a05258111c7.jpg"alt="1" width="200" height="200">
+            </div>
+
+            <div class="recipe">
+                <h4>Barfi</h4>
+                <p>A dense sweet made from condensed milk, sugar, and various flavors such as coconut, pistachio, or chocolate.</p>
+                <img src="https://www.tashasartisanfoods.com/blog/wp-content/uploads/2022/09/Easiest-Almond-Burfi-FEATURE-NEW.jpeg" alt="1" width="200" height="200">
+            </div>
+        </section>
+    </main>
+
+
+    <script src="js/scripts.js">
+
+        // scripts.js
+
+document.addEventListener("DOMContentLoaded", () => {
+
+// Interactive feature for clicking recipe buttons
+const recipeButtons = document.querySelectorAll('.recipe-button');
+recipeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const recipeDetails = button.nextElementSibling;
+        recipeDetails.style.display = recipeDetails.style.display === 'none' ? 'block' : 'none';
+    });
+});
+
+// Navigation hover effects (reused from previous pages)
+const navLinks = document.querySelectorAll('nav ul li a');
+navLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        link.style.backgroundColor = '#333';
+        link.style.color = '#ffcc00';
+    });
+
+    link.addEventListener('mouseleave', () => {
+        link.style.backgroundColor = 'transparent';
+        link.style.color = '#333';
+    });
+});
+});
+
+
+    </script>
+</body>
+</html>

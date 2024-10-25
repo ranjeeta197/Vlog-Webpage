@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+body{ 
+        
+/* Styles for the Contact page */
+.contact-intro {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-intro h2 {
+    margin-bottom: 1rem;
+}
+
+.contact-intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fff3e0;
+    border: 1px solid #ff6600;
+    border-radius: 8px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e65c00;
+}
+
+.form-message {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="contact-intro">
+            <h2>Get in Touch</h2>
+            <p>We would love to hear from you! If you have any questions or feedback, please fill out the form below.</p>
+        </section>
+
+        <section class="contact-form">
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="form-message" class="form-message" style="display: none;"></div>
+        </section>
+    </main>
+<br>
+    
+</body>
+</html>

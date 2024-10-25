@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diwali: The Festival of Lights">
+    <title>Diwali - Home</title>
+    <link rel="stylesheet" href="diwali.css">
+    <style>
+        body{ 
+        /* Reset default margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8e1;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ffcc00;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+img {
+    margin-top: 2rem;
+    border: 3px solid #ff6600;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h1 {
+    color: #ff6600;
+}
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Diwali</a></li>
+                <li><a href="celebrations.html">Celebrations</a></li>
+                <li><a href="traditions.html">Traditions</a></li>
+                <li><a href="decorations.html">Decorations</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="gifts.html">Gifts</a></li>
+                <li><a href="gods.html">Gods</a></li>
+                <li><a href="diy.html">DIY Crafts</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to the Diwali Website</h1>
+        <p>This is the content area for this specific page.</p>
+        <!-- Example of adding an image -->
+        <img src="https://th.bing.com/th/id/R.4cf2903e5ee6b7e02439ccf6df32c19b?rik=M%2bXUcui0zLP9Jw&riu=http%3a%2f%2fnomadsworld.com%2fwp-content%2fuploads%2f2017%2f10%2fdiwali_pune_india_commons.jpg&ehk=c%2bOyRXSS7csZk9vegzTxouNLLZ0fhPVrNuIGRkyZNIU%3d&risl=&pid=ImgRaw&r=0" alt="Diwali Lights" width="600" height="400">
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Diwali Website</p>
+    </footer>
+
+    
+ <script src="js/scripts.js">
+        // scripts.js
+
+// When the DOM is fully loaded, add event listeners
+document.addEventListener("DOMContentLoaded", () => {
+
+// Example of an interactive feature: Click on the image to display an alert
+const diwaliImage = document.querySelector('.intro img');
+diwaliImage.addEventListener('click', () => {
+    alert('Happy Diwali! May the light guide you.');
+});
+
+// Example of navigation hover effect
+const navLinks = document.querySelectorAll('nav ul li a');
+navLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        link.style.backgroundColor = '#333';
+        link.style.color = '#ffcc00';
+    });
+
+    link.addEventListener('mouseleave', () => {
+        link.style.backgroundColor = 'transparent';
+        link.style.color = '#333';
+    });
+});
+});
+
+    </script>
+    
+
+</body>
+</html>

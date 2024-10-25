@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwali-Celebrations</title>
+    <link rel="stylesheet" href="celebration.css">
+    <style>
+        body{ 
+/* Styles for the Celebrations page */
+.celebration-intro {
+    padding: 2rem;
+    text-align: center;
+}
+
+.celebration-intro h2 {
+    color: #ff6600;
+    margin-bottom: 1.5rem;
+}
+
+.celebration-intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.celebration-intro img {
+    margin-top: 1.5rem;
+    border: 4px solid #ff6600;
+    border-radius: 8px;
+}
+
+.celebration-details {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #fff3e0;
+}
+
+.celebration-details h3 {
+    color: #ff6600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.region {
+    margin-bottom: 2rem;
+}
+
+.region h4 {
+    color: #ff6600;
+    margin-bottom: 0.5rem;
+}
+
+.region p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="celebration-intro">
+            <h2>Celebrating Diwali Around the World</h2>
+            <p>Diwali, the Festival of Lights, is celebrated with great enthusiasm and joy across India and the world. Each region has its own unique way of observing the festival, but the essence of joy, lights, and festivities remains the same everywhere.</p>
+            <img src="https://images.news18.com/ibnlive/uploads/2006/10/13.jpg?impolicy=website&width=0&height=0" alt="Diwali Celebration" width="600" height="400">
+        </section>
+
+        <section class="celebration-details">
+            <h3>How Different Regions Celebrate Diwali</h3>
+
+            <div class="region">
+                <h4>North India</h4>
+                <p>In North India, Diwali celebrates the return of Lord Rama to Ayodhya after his victory over Ravana. The houses are decorated with lights, and firecrackers are burst in celebration.</p>
+            </div>
+
+            <div class="region">
+                <h4>South India</h4>
+                <p>In South India, the festival is celebrated as the victory of Lord Krishna over the demon Narakasura. People clean their homes, wear new clothes, and offer prayers to gods.</p>
+            </div>
+
+            <div class="region">
+                <h4>Western India</h4>
+                <p>In Gujarat and Maharashtra, Diwali is celebrated as the start of the new financial year. Businessmen open new account books, and the festival is seen as a time for prosperity.</p>
+            </div>
+
+            <div class="region">
+                <h4>Global Celebrations</h4>
+                <p>Diwali is celebrated worldwide in countries like Nepal, Malaysia, Singapore, and even the UK and the USA. The Indian diaspora carries the traditions of Diwali wherever they go.</p>
+            </div>
+        </section>
+    </main>
+
+   
+    <script src="js/scripts.js">
+// scripts.js
+
+document.addEventListener("DOMContentLoaded", () => {
+
+// Add interactivity for the image on the Celebrations page
+const celebrationImage = document.querySelector('.celebration-intro img');
+if (celebrationImage) {
+    celebrationImage.addEventListener('click', () => {
+        alert('Enjoy the celebrations of Diwali across the world!');
+    });
+}
+
+// Hover effects for navigation links
+const navLinks = document.querySelectorAll('nav ul li a');
+navLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        link.style.backgroundColor = '#333';
+        link.style.color = '#ffcc00';
+    });
+
+    link.addEventListener('mouseleave', () => {
+        link.style.backgroundColor = 'transparent';
+        link.style.color = '#333';
+    });
+});
+});
+
+
+    </script>
+</body>
+</html>

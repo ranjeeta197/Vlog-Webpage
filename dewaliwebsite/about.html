@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About diwali</title>
+    <link rel="stylesheet" href="about.css">
+    <style>
+        body{  
+/* Styles for the About Diwali page */
+.about-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #ff6600;
+    margin-bottom: 1.5rem;
+}
+
+.about-section p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.about-section img {
+    margin-top: 2rem;
+    border: 4px solid #ff6600;
+    border-radius: 8px;
+}
+
+.about-highlights {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #fff3e0;
+    text-align: left;
+}
+
+.about-highlights h3 {
+    color: #ff6600;
+    margin-bottom: 1rem;
+}
+
+.about-highlights ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+.about-highlights ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="about-section">
+            <h2>The Significance of Diwali</h2>
+            <p>Diwali, also known as the Festival of Lights, is one of the most celebrated festivals in Hindu culture. The festival marks the return of Lord Rama to Ayodhya after a 14-year exile, and his victory over the demon king Ravana. It symbolizes the victory of good over evil and light over darkness.</p>
+
+            
+            <img src="https://th.bing.com/th/id/OIP.bEi6EcBC6Ia9KsnV7eSHZQHaE6?rs=1&pid=ImgDetMain" alt="Diwali Celebration" width="600" height="400">
+        </section>
+
+        <section class="about-highlights">
+            <h3>Historical Highlights</h3>
+            <ul>
+                <li><strong>Rama's Return:</strong> The central story of Diwali involves Lord Rama's return to Ayodhya after defeating Ravana.</li>
+                <li><strong>Goddess Lakshmi:</strong> The festival is also associated with the worship of Goddess Lakshmi, the goddess of wealth and prosperity.</li>
+                <li><strong>Festival of Lights:</strong> The lighting of lamps symbolizes the victory of knowledge over ignorance and good over evil.</li>
+            </ul>
+        </section>
+    </main>
+
+     <script src="js/scripts.js">
+// scripts.js
+
+document.addEventListener("DOMContentLoaded", () => {
+
+// Interactive image click event for the About page
+const aboutImage = document.querySelector('.about-section img');
+if (aboutImage) {
+    aboutImage.addEventListener('click', () => {
+        alert('Diwali brings light, joy, and prosperity!');
+    });
+}
+
+// Hover effects for navigation links (same as before)
+const navLinks = document.querySelectorAll('nav ul li a');
+navLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        link.style.backgroundColor = '#333';
+        link.style.color = '#ffcc00';
+    });
+
+    link.addEventListener('mouseleave', () => {
+        link.style.backgroundColor = 'transparent';
+        link.style.color = '#333';
+    });
+});
+});
+
+    </script>
+</body>
+</html>

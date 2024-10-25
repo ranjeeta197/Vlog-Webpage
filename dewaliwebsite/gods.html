@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titl>About-Gods</title>
+    <link rel="stylesheet" href="gods.css">
+    <style>
+        body{ 
+        /* Styles for the Gods page */
+.gods-intro {
+    padding: 2rem;
+    text-align: center;
+}
+
+.gods-intro h2 {
+    color: #ff6600;
+    margin-bottom: 1.5rem;
+}
+
+.gods-intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.gods-intro img {
+    margin-top: 1.5rem;
+    border: 4px solid #ff6600;
+    border-radius: 8px;
+}
+
+.gods-list {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #fff3e0;
+}
+
+.gods-list h3 {
+    color: #ff6600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.deity {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ff6600;
+    border-radius: 8px;
+}
+
+.deity h4 {
+    color: #ff6600;
+    margin-bottom: 0.5rem;
+}
+
+.deity p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.deity-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.deity-button:hover {
+    background-color: #e65c00;
+}
+
+.deity-details {
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px dashed #ff6600;
+    border-radius: 5px;
+}
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="gods-intro">
+            <h2>Deities Worshipped During Diwali</h2>
+            <p>Diwali is a time to honor the deities that symbolize prosperity, wisdom, and victory over evil. Let's learn more about the gods worshipped during this festival.</p>
+            <img src="https://c8.alamy.com/comp/JX3HGY/diwali-festival-worship-gods-lakshmi-puja-with-ganesh-india-JX3HGY.jpg" alt="Gods of Diwali" width="600" height="400">
+        </section>
+
+        <section class="gods-list">
+            <h3>Main Deities</h3>
+
+            <div class="deity">
+                <h4>Goddess Lakshmi</h4>
+                <p>The goddess of wealth, fortune, and prosperity. She is worshipped on the night of Diwali to bless homes and businesses with prosperity.</p>
+                <img src="https://c8.alamy.com/comp/A2W1PC/goddess-lakshmi-A2W1PC.jpg" alt="1" width="200" height="200">
+                    <p><strong>Significance:</strong> Lakshmi represents wealth and abundance. It is believed that she visits homes during Diwali.</p>
+                    <p><strong>Worship Rituals:</strong> People clean their homes, light diyas, and offer prayers and sweets to attract her blessings.</p>
+                </div>
+            </div>
+
+            <div class="deity">
+                <h4>Lord Ganesha</h4>
+                <p>The remover of obstacles and the god of beginnings. He is worshipped before starting any new venture, including the new year.</p>
+                <img src="https://th.bing.com/th/id/OIP.pozuLT30mwbGpm16Jvu9rgHaLo?rs=1&pid=ImgDetMain" alt="1" width="200" height="200">
+                    <p><strong>Significance:</strong> Ganesha symbolizes wisdom and good fortune, making him a favorite during Diwali.</p>
+                    <p><strong>Worship Rituals:</strong> Offerings of sweets, especially modaks, are made to Ganesha to seek his blessings.</p>
+                </div>
+            </div>
+
+            <div class="deity">
+                <h4>Lord Rama</h4>
+                <p>The hero of the epic Ramayana, Lord Rama's return to Ayodhya is celebrated during Diwali, symbolizing the victory of good over evil.</p>
+                <img src="https://wallpaperaccess.com/full/1803531.jpg"alt="1" width="200" height="200">
+                    <p><strong>Significance:</strong> His return represents the triumph of righteousness and justice.</p>
+                    <p><strong>Worship Rituals:</strong> Devotees perform rituals and light lamps to celebrate his return to Ayodhya.</p>
+                </div>
+            </div>
+
+            <div class="deity">
+                <h4>Lord Krishna</h4>
+                <p>Another revered god, Lord Krishna is worshipped for his role in the Bhagavad Gita and as a protector of dharma (righteousness).</p>
+                <img src="https://th.bing.com/th/id/R.5d0ae71873e27a35b278bd18744baca7?rik=4Bob1b5gVbhCrA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-Mzg-dHKhzEk%2fUN7X-MLLQkI%2fAAAAAAAAC98%2fKbuzOoGZshU%2fs1600%2flord%2bkrishna.jpg&ehk=n6XepKZnEwfA3J5KalZ5zGqRTxpSw6XQTQOhyNEP3aQ%3d&risl=&pid=ImgRaw&r=0" alt="1" width="200" height="200">
+                    <p><strong>Significance:</strong> Krishna embodies love, compassion, and divine joy.</p>
+                    <p><strong>Worship Rituals:</strong> Special prayers and offerings are made to honor his life and teachings.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="gods.js">
+// scripts.js
+
+document.addEventListener("DOMContentLoaded", () => {
+
+// Interactive feature for clicking deity buttons
+const deityButtons = document.querySelectorAll('.deity-button');
+deityButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const deityDetails = button.nextElementSibling;
+        deityDetails.style.display = deityDetails.style.display === 'none' ? 'block' : 'none';
+    });
+});
+
+// Navigation hover effects (reused from previous pages)
+const navLinks = document.querySelectorAll('nav ul li a');
+navLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        link.style.backgroundColor = '#333';
+        link.style.color = '#ffcc00';
+    });
+
+    link.addEventListener('mouseleave', () => {
+        link.style.backgroundColor = 'transparent';
+        link.style.color = '#333';
+    });
+});
+});
+
+    </script>
+</body>
+</html>

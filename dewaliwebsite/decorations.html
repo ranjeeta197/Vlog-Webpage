@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Diwali-Decorations></title>
+    <link rel="stylesheet" href="decoration.css">
+    <style>
+        body{ 
+        /* Styles for the Decorations page */
+.decoration-intro {
+    padding: 2rem;
+    text-align: center;
+}
+
+.decoration-intro h2 {
+    color: #ff6600;
+    margin-bottom: 1.5rem;
+}
+
+.decoration-intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.decoration-intro img {
+    margin-top: 1.5rem;
+    border: 4px solid #ff6600;
+    border-radius: 8px;
+}
+
+.decoration-types {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #fff3e0;
+}
+
+.decoration-types h3 {
+    color: #ff6600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.decoration {
+    margin-bottom: 2rem;
+}
+
+.decoration h4 {
+    color: #ff6600;
+    margin-bottom: 0.5rem;
+}
+
+.decoration p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="decoration-intro">
+            <h2>Beautify Your Home with Diwali Decorations</h2>
+            <p>Diwali is the perfect time to decorate your home with vibrant colors, lights, and flowers. From intricate rangoli designs to festive lights, decorations play a major role in the Diwali celebrations.</p>
+            <img src="https://i.pinimg.com/originals/74/67/34/7467340d08fdbe0df61e9ba04965af42.jpg" alt="Diwali Decorations" width="600" height="400">
+        </section>
+
+        <section class="decoration-types">
+            <h3>Types of Diwali Decorations</h3>
+
+            <div class="decoration">
+                <h4>Rangoli</h4>
+                <p>Rangoli is a traditional art form made with colored powders, flowers, or rice, designed on the floors of living rooms or courtyards. It’s believed to bring good luck and welcome the gods into the home.</p>
+            </div>
+
+            <div class="decoration">
+                <h4>Lighting Diyas and Lamps</h4>
+                <p>Lighting diyas and electric lamps is a key aspect of Diwali. Homes are adorned with small earthen lamps to symbolize the triumph of light over darkness.</p>
+            </div>
+
+            <div class="decoration">
+                <h4>Flower Decorations</h4>
+                <p>Flowers like marigolds and roses are commonly used to decorate homes. Garlands of flowers are hung at doorways, creating a welcoming and festive environment.</p>
+            </div>
+
+            
+    <script src="decoration.js">
+
+        // scripts.js
+
+document.addEventListener("DOMContentLoaded", () => {
+
+// Interactive feature for clicking the decorations image
+const decorationImage = document.querySelector('.decoration-intro img');
+if (decorationImage) {
+    decorationImage.addEventListener('click', () => {
+        alert('Decorate your home beautifully this Diwali!');
+    });
+}
+
+// Tooltip for decoration descriptions
+const decorations = document.querySelectorAll('.decoration');
+decorations.forEach(decoration => {
+    decoration.addEventListener('mouseenter', () => {
+        decoration.style.backgroundColor = '#ffebcc';
+        decoration.title = 'Learn more about this decoration';
+    });
+
+    decoration.addEventListener('mouseleave', () => {
+        decoration.style.backgroundColor = 'transparent';
+    });
+});
+
+// Navigation hover effects (reused from previous pages)
+const navLinks = document.querySelectorAll('nav ul li a');
+navLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        link.style.backgroundColor = '#333';
+        link.style.color = '#ffcc00';
+    });
+
+    link.addEventListener('mouseleave', () => {
+        link.style.backgroundColor = 'transparent';
+        link.style.color = '#333';
+    });
+});
+});
+
+
+    </script>
+
+</body>
+</html>

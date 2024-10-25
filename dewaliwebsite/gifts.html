@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwali-Gifts</title>
+    <link rel="stylesheet" href="gifts.css">
+    <style>
+        body{ 
+        /* Styles for the Gifts page */
+.gifts-intro {
+    padding: 2rem;
+    text-align: center;
+}
+
+.gifts-intro h2 {
+    color: #ff6600;
+    margin-bottom: 1.5rem;
+}
+
+.gifts-intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.gifts-intro img {
+    margin-top: 1.5rem;
+    border: 4px solid #ff6600;
+    border-radius: 8px;
+}
+
+.gift-list {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #fff3e0;
+}
+
+.gift-list h3 {
+    color: #ff6600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.gift {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ff6600;
+    border-radius: 8px;
+}
+
+.gift h4 {
+    color: #ff6600;
+    margin-bottom: 0.5rem;
+}
+
+.gift p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.gift-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.gift-button:hover {
+    background-color: #e65c00;
+}
+
+.gift-details {
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px dashed #ff6600;
+    border-radius: 5px;
+}
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="gifts-intro">
+            <h2>Thoughtful Diwali Gifts</h2>
+            <p>Diwali is a time for giving and sharing joy. Explore these thoughtful gift ideas that can brighten your loved ones' celebrations.</p>
+            <img src="https://okcredit-blog-images-prod.storage.googleapis.com/2021/10/shutterstock_1524049631.jpg" alt="Diwali Gifts" width="600" height="400">
+        </section>
+
+        <section class="gift-list">
+            <h3>Popular Diwali Gifts</h3>
+
+            <div class="gift">
+                <h4>Traditional Sweets</h4>
+                <p>Gift boxes filled with traditional sweets like laddoos, barfis, and gulab jamuns are a delicious way to celebrate Diwali.</p>
+                <img src="https://thumbs.dreamstime.com/b/close-up-shot-traditional-holi-sweets-snacks-299871231.jpg" alt="1" width="200" height="200">
+                    <p><strong>Description:</strong> Assorted sweets made with milk, sugar, and spices, beautifully packaged.</p>
+                </div>
+            </div>
+
+            <div class="gift">
+                <h4>Decorative Diyas</h4>
+                <p>Colorful diyas (oil lamps) make perfect gifts that add charm and light to Diwali celebrations.</p>
+                <img src="https://storage.googleapis.com/little-passports-blog/2014/10/diya-for-blog.jpg" alt="1" width="200" height="200">
+                    <p><strong>Description:</strong> Hand-painted clay diyas adorned with vibrant colors and embellishments.</p>
+                </div>
+            </div>
+
+            <div class="gift">
+                <h4>Home Decor Items</h4>
+                <p>Elegant home decor items like wall hangings, lanterns, and traditional art can enhance festive vibes.</p>
+                <img src="https://i.ytimg.com/vi/zOcrNhWll9U/maxresdefault.jpg"alt="1" width="200" height="200">
+                    <p><strong>Description:</strong> Unique decor pieces that resonate with the spirit of Diwali.</p>
+                </div>
+            </div>
+
+            
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="gifts.js">
+        // scripts.js
+
+document.addEventListener("DOMContentLoaded", () => {
+
+// Interactive feature for clicking gift buttons
+const giftButtons = document.querySelectorAll('.gift-button');
+giftButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const giftDetails = button.nextElementSibling;
+        giftDetails.style.display = giftDetails.style.display === 'none' ? 'block' : 'none';
+    });
+});
+
+// Navigation hover effects (reused from previous pages)
+const navLinks = document.querySelectorAll('nav ul li a');
+navLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        link.style.backgroundColor = '#333';
+        link.style.color = '#ffcc00';
+    });
+
+    link.addEventListener('mouseleave', () => {
+        link.style.backgroundColor = 'transparent';
+        link.style.color = '#333';
+    });
+});
+});
+
+    </script>
+</body>
+</html>
